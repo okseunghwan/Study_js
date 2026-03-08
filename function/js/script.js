@@ -15,8 +15,12 @@ console.log("Hello my name is jack")
 // function은 어떤 코드를 캡슐화해서 ,실행을 여러번 할수있게 해준다
 // 노래나 동영상을 생각하면 쉽다, 계속해서 반복해서 재생가능
 
-function sayHello(name){
-  console.log("Hello my name is "+name)
+function sayHello(name,age){
+  // 데이터를 받으려면 ()안에 데이터를 추가해야함
+  // 원하는 어떤 이름이든 넣어도된다.
+  // 이렇게 하면 js는 sayhello로 보내진 첫번째 데이터가
+  // name 이라는 variable로 보내진다는것을 안다
+  console.log("Hello my name is "+name+" and i'm "+age)
 }
 // const를 만들때 const를 쓰는것처럼, string을 작성할때 ""를 쓰듯이
 // array는 [] object는 {}
@@ -34,7 +38,33 @@ sayHello();
 
 // argument는 function을 실행하는 동안 어떤정보를 function에게 보낼수있는 방법
 
-sayHello("james")
-sayHello("jin")
-sayHello("jimin")
-sayHello("lynn")
+sayHello("james",23)
+sayHello("jin",26)
+sayHello("jimin",30)
+sayHello("lynn",18)
+
+
+function plus(a,b){
+  // a에는 첫번째 argument인 8이 들어가고
+  // b에는 두번째 argument인 60이 들어간다.
+  // 이게 데이터를 받는 방법이고, 순서가 매우중요하다.
+  console.log(a+b)
+}
+
+plus(8,60);
+// 매개변수를 보내지않으면 NaN이 출력됨
+// NaN = Not a Number
+
+function divide(a,b){
+  console.log(a/b);
+}
+divide(10,5)
+
+const player = {
+  name: "nico",
+  sayHello:function(otherPersonName){
+    console.log("hello! "+otherPersonName+ " nice to meet you!")
+  }
+}
+console.log(player.name);
+player.sayHello("lynn");

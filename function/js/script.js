@@ -68,3 +68,26 @@ const player = {
 }
 console.log(player.name);
 player.sayHello("lynn");
+
+
+const calculator = {
+  add: function(a,b){
+    console.log(a+b);
+  },
+  minus: function(a,b){
+    console.log(a-b);
+
+  },
+  divide: function(a,b){
+    console.log(a/b)
+  },
+  powerOf: function(a,b){
+    console.log(a**b);
+  },
+
+
+}
+calculator.add(5,5);
+calculator.minus(10,5);
+calculator.divide(100,10);
+calculator.powerOf(5,3);

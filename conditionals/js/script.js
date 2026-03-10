@@ -8,7 +8,7 @@
 
 // 나이스한 나이 계산기
 
-const age = prompt("how old are you?") 
+const age = prompt("how old are you?")
 // 나이를 직접 넣는 대신 , prompt라는 function사용
 // prompt는 사용자에게 창을 띄울수 있게 해준다
 // prompt는 두개의 argument를 받는다
@@ -56,3 +56,30 @@ const age2 = parseInt(prompt("how old are you2?"));
 // 만약 사용자가 "lalalala"같은 답을 한다면
 // parseInt는 이걸 받아서, NaN이라고 알려준다
 console.log(age2)
+
+
+
+// 무언가가 NaN인지 팔별하는방법 isNaN()
+console.log(isNaN(age2));
+// isNaN을 사용하면 boolean으로 알려줌 true,false
+// 하나의 argument(인자)를 주면 number인지 아닌지 알려줌
+
+// isNaN은 boolean을 return한다 NaN이면 true 
+// NaN이 아니면(number) false
+
+
+
+if(isNaN(age2)){
+  // condition은 boolean으로 판별 가능해야 한다.
+  // true or false 두가지 옵션 뿐
+  // condition ===true (조건이 참이면)
+  console.log("please write a number")
+}else{
+  // condition ===false (조건이 거짓이면)
+  console.log("thank you for writing your age.")
+}
+
+
+
+
+

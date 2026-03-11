@@ -69,15 +69,30 @@ console.log(isNaN(age2));
 
 
 
-if(isNaN(age2)){
+if(isNaN(age2)|| age <0){
   // condition은 boolean으로 판별 가능해야 한다.
   // true or false 두가지 옵션 뿐
   // condition ===true (조건이 참이면)
-  console.log("please write a number")
+  console.log("please write a real positive number")
+}else if(age2<18){
+  console.log("you are too young")
+}else if(18<=age2 && age2<=50){
+  // &&(AND)는 앞의조건, 뒤의조건(condition) 둘다 true여야 true
+  // ||(OR)은 앞의조건, 뒤의조건 둘중 하나만 참이여도 true
+  console.log("you can drink")
+}else if(age2>50 && age2<=80){
+  console.log("you should exercise")
+}else if(age2>80 && age2<100){
+  console.log("you can do whatever you want.")
+}else if(age2===100){
+  console.log("wow you are wise")
 }else{
   // condition ===false (조건이 거짓이면)
-  console.log("thank you for writing your age.")
+  console.log("you can`t drink")
 }
+// else가 실행되려면 if, else if 둘다 false여야함
+
+//isNaN은 NaN(숫자가아니어야) true
 
 
 

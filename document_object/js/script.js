@@ -17,3 +17,19 @@ document.title = "Hello ! from JS"
 // js에서 document.title을 hello from js 라고 입력하면
 
 // hello! from js가 화면에 나온다.
+
+const title = document.getElementById("title")
+// getElementById()는 string을 전달받는 함수니까 ""(큰따옴표)안에 아이디를 적어준다.
+
+console.log(title);
+console.dir(title);
+
+title.innerText = "Got you!"
+// h1태그에 들어있던 grab me! 가 Got you로 변경된다.
+// html에서 변경한것이 아니라 자바스크립트에서 변경됨
+// 이게 가능한 이유는 id를 추가했기 떄문이고
+// 자바스크립트에서 element를 가져왔기 떄문이다.
+// getElementById()
+
+console.log(title.id)
+console.log(title.className)

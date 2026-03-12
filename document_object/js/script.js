@@ -33,3 +33,31 @@ title.innerText = "Got you!"
 
 console.log(title.id)
 console.log(title.className)
+
+const hellos = document.getElementsByClassName("hello")
+// 클래스네임으로 html 호출하기
+console.log(hellos)
+// console에서 확인해보면, hello라는 클래스를 가진 태그가 많아서 array에 담겨있다.
+// 가끔 많은 element를 한번에 가지고와야하는 경우가 있다
+// 그럴때는 getElementByClassName()을 사용한다 =class는 여러개 중복 지정가능
+
+
+const hello2 = document.querySelector(".hello2 h1")
+
+// element를 가지고 오는 가장 좋은 방법은
+// querySelector , querySelectorAll 이다.
+// querySelector는 element를 CSS방식으로 검색할 수 있다.
+// hello라는 class 내부에있는 h1을 가지고 올수있다.
+console.log(hello2)
+// querySelector(".클래스네임 태그")
+
+// 클래스네임이 중복되고 여러개라면 맨위에있는 hello2 클래스를 가진 h1이 호출된다.
+// querySelector는 첫번째 element만 가져온다.
+// 전부가져오고 싶으면 querySelectorAll을 써야한다.
+const hello3 = document.querySelectorAll(".hello2 h1")
+console.log(hello3)
+
+// querySelector로 id를 호출할 때는 querySelector("#ID 원하는태그")를 입력한다.
+// querySelector("#hello") == getElementById("hello")
+
+hello2.innerText = "hihi"

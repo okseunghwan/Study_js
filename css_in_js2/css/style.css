@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #333;
+}
+h1{
+  color: cornflowerblue;
+  transition: color .5s ease-in-out;
+}
+
+.clicked{
+  color: tomato;
+}
+
+.sexy-font{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

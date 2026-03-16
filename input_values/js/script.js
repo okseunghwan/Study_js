@@ -25,8 +25,6 @@ const loginInput2 = document.querySelector("#login-form input")
 const loginButton2 = document.querySelector("#login-form button")
 
 
-
-
 function handleLoginBtnClick(){
 // 이름이 길어지더라도 나한테 코드가 더 명확해지는 방향으로 이름을 지어야한다.
   console.dir(loginInput)

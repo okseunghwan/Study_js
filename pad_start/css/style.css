@@ -1,0 +1,4 @@
+.hidden{
+  display: none;
+}
+/* hidden class의 역할 -> display:none으로 요소를 숨기는것 */
